@@ -2,14 +2,14 @@ let shop = document.getElementById("shop");
 
 let shopItemsData = [
   {
-    id: "item-one",
+    id: "one",
     name: "Casual Shirt",
     price: 45,
     desc: "A casual shirt you can wear on any occasion",
     img: "images/img-1.jpg"
   },
   {
-    id: "item-two",
+    id: "two",
     name: "Office Shirt",
     price: 45,
     desc: "A office shirt you can wear comfortably to work",
@@ -17,14 +17,14 @@ let shopItemsData = [
     
   },
   {
-    id: "item-three",
+    id: "three",
     name: "T-Shirt",
     price: 25,
     desc: "A cool tee to express your personality",
     img: "images/img-3.jpg"
   },
   {
-    id: "item-four",
+    id: "four",
     name: "Men's Suit",
     price: 300,
     desc: "A classic suit for a timeless fashion",
