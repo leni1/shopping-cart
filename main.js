@@ -80,7 +80,7 @@ let decrement = (id) => {
   let selectedItem = id;
   let search = basket.find((x) => x.id === selectedItem.id)
 
-  if (search === 0) return;
+  if (search === undefined || search.item === 0) return;
   else {
     search.item -=1;
   }
@@ -90,4 +90,12 @@ let decrement = (id) => {
 let update = (id) => {
   let search = basket.find((x) => x.id === id)
   document.getElementById(id).innerHTML = search.item;
+  calculation();
+};
+
+let calculation = () => {
+  let cartIcon = document.getElementById("cartAmount");
+  cartIcon.innerHTML = 100;
+  console.log(basket.map((x) => x.item).reduce((x, y)=> x + y, 0));
+  cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
 };
